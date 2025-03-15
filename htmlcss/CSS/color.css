@@ -1,0 +1,21 @@
+/* for finding the color based in the rcg and hex value used ,
+browse color picker */ 
+
+/* color apply based on the RGB value(3 parameter) */
+body{
+  background-color:hwb(54 31% 61%) ;
+}
+/* color apply directly by their name */
+#p1{
+    color:tomato;
+}
+/* color apply based on the HEX value */
+#p2{
+    color:aqua;
+}
+#p3{
+ color:#267D26;   
+}
+#p4{
+    color:hsl(310, 65%, 30%);
+}

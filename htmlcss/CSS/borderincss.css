@@ -1,0 +1,34 @@
+h1{
+    border-style:solid;
+    border: 3px solid purple;
+    border-radius: 7px;
+}
+h2{
+    border-style:dashed;
+    border-radius: 7px;
+    border-bottom: 3px solid red;
+}
+h3{
+    border-style:dotted;
+    border-top:3px solid purple;
+}
+h4{
+    border-style:double;
+    border-left: 3px dotted orange;
+}
+h5{
+    border-style:groove;
+    border-right: 7px solid green;
+}
+p{
+    border-style:ridge;
+    border-width:4px;
+    border-color: pink;
+    border-radius: 5px;
+}
+header{
+    border-style:groove;
+    border-color: blue;
+    border-width: 10px;
+    border-radius: 7px;
+}
