@@ -3,8 +3,10 @@
     <head>
         <title> Table </title>
         <style>
+            
             table{
                 border: 2px solid green;
+                border-collapse: collapse;
             }
             th{
                 border: 2px solid pink;
@@ -15,6 +17,7 @@
         </style>
     </head>
     <body>
+        <h5>For table understanding</h5>
         <table>
             <Caption>Food Menu</Caption>
             <tr>
@@ -34,5 +37,41 @@
                 <td>20</td>
             </tr>
         </table>
+ <br><br>
+ <h5>This below table is made just to show the thead ,tbody and tfooter uses </h5>
+        <table>
+        <!-- thead to wrap table header usually contains th tag -->
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>  
+            </thead>
+        <!-- tbody to wrap table body contains(tr and td) -->
+            <tbody>
+                 <tr>
+                <td>A</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>30</td>
+            </tr> 
+            </tbody>
+          
+        <!-- tfooter to wrap table footer contains(tr and td) -->
+            <tfoot>
+                <tr>
+                <td>Sum</td>
+                <td>60</td>
+            </tr>
+            </tfoot>
+            
+        </table>
+
     </body>
 </html>

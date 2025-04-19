@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan and Colspan attributes in tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        tr,th,td{
+           border: 2px solid rgb(17, 16, 16);
+           border-collapse: collapse; 
+        }
+        tfoot{
+            background-color: lightblue;
+        }
+        thead{
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+<table >
+
+    <thead>
+        <tr>
+            <th rowspan="2" >Items</th>
+            <th colspan="2" >Price</th>
+        </tr>
+        <tr>
+            <th>INR</th>
+            <th>USD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pizza</td>
+            <td>300</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>700</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>MoMo</td>
+            <td>140</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>1140</td>
+            <td>8</td>
+        </tr>
+    </tfoot>
+
+</table>    
+</body>
+</html>
