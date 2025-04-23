@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube search form </title>
+</head>
+<body>
+    <h3>Creating a search option that redirects its search request to youtube</h3>
+
+    <form action="https://www.youtube.com/results">
+    <!-- search_query is youtube fixed name attribute -->
+        <input type="text" placeholder="search videos in youtube" name="search_query">
+        <button>Search</button>
+    </form>
+    <br><hr><br>
+    <h3>Creating a search option that redirects its search request to google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in google" name="q">
+    <!-- q is google fixed name attribute -->
+        <button> Search</button>
+    </form>
+
+    <br><hr><br>
+    <form action="one.php">
+        <label>Your name: 
+        <input type="text" placeholder="enter your name" name="yname"></label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <form action="two.html">
+        <label for="date">Select date:</label>
+        <input type="date" id="date" name="date">
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
