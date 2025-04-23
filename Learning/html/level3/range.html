@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+</head>
+<body>
+    <form action="">
+        <label for="vol2">Select Your volume</label>
+        <input type="range" min="0" max="100" step="1" value="10" name="vol2" id="vol">
+        <hr>
+
+        <label for="vol">Select your volume</label>
+        <input type="range" min="0" max="100" step="1" value="0" name="vol" id="vol" oninput="vol1Value.innerText = this.value">
+        <span id="vol1Value">0</span> <!-- Shows volume value -->
+        
+        <hr>
+        <label for="vol1"> Select your volume</label>
+        <input type="range" min="0" max="100" step="10" name="vol1" id="vol1" value="50" oninput="volValue.innerText = this.value " >
+        <span id="volValue">50</span>
+    
+
+        <button> Submit</button>
+    </form>
+</body>
+</html>
