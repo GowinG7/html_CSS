@@ -1,0 +1,23 @@
+div{
+    border: 2px solid red;
+    height:75px;
+    margin:7px;
+    overflow:hidden; /*just badi content nadekhiyeko hunxa sab harayeko hunna*/
+}
+h1{
+    border: 2px solid blue;
+    height: 75px;
+    overflow: hidden;
+    overflow:auto; /*badi content bayo baney aafai scroll bar aauxa*/
+}
+.one{
+    border: 7px solid green;
+    height:75px;
+    overflow:scroll;
+}
+#lastko{
+    border:3px solid rgb(55, 0, 255);
+    height:35px;
+    overflow: visible;
+
+}

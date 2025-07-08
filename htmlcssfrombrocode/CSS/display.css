@@ -1,0 +1,30 @@
+#demo1{
+    background-color:red;
+   
+    display:inline
+}
+/*div is block level element its going to take the entire width available 
+span is inline elements its take only necessary width(space) required*/
+#demo2{
+    background-color: blue;
+    
+    display:block;
+}
+div{
+    background-color: green;
+   
+    
+}
+span{
+    background-color: yellow;
+}
+.one{
+    background-color: pink;
+    height:100px;
+    width:100px;
+}
+/*span ma height and width apply hunna kinaki yesle only required space matra linxa
+tara yeha 
+display property ko used garerw change grna sakido raixa 
+div block level element baye ni inline elements banauna
+ani span inline bayeni block level element banauna*/

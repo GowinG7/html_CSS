@@ -1,0 +1,29 @@
+body{
+    background:white;
+}
+h1{
+    color:Black;
+}
+h4{
+    color:brown;
+}
+/* to select the class we used . in css */
+.odd{
+    color:green;
+}
+.even{
+    color:pink;
+}
+/* To select the id we used # in css file */
+#p1{
+    color:orange;
+}
+#p3{
+    color:darkmagenta;
+}
+header{
+    background-color: aquamarine;
+}
+footer{
+    background-color: pink;
+}

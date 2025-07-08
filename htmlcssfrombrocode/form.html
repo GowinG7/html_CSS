@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form demo</title>
+    </head>
+    <body>
+        <!--here the entype is used cause while uploading larger file , when we send large amount of
+        data we break it in the multiple parts when all of the data recieved as multiple parts is then resembled-->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" placeholder="hello123" minlength="6" maxlength="15" required> <br>
+
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required> <br>
+
+         <label for="email">email:</label>
+         <input type="email" id="email" name="email" placeholder="hello@gmail.com"> <br>
+          
+         <label for="phone">phone no:</label>
+         <input type="tel" id="phone" name="phone" placeholder="1234567890" minlength="10" maxlength="10" pattern="[0-9]{10}" > <br>
+         <!-- <input type="tel" id="phone" placeholder="1231245632" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> US tira ko phone-number pattern yesto hunxa -->
+         <label for="bday">birthday</label>
+         <input type="date" id="bday" name="bday" required> <br>
+
+         <label for="quantity">quantity</label>
+         <input type="number" id="quantity" name="quantity" min="0" max="100"> <br>
+         
+     <!--
+         <label for="title">title:</label>
+         <label for="Mr.">Mr.</label>
+         <input type="radio" id="Mr." value="Mr." name="title">
+         <label for="Ms.">Ms.</label>
+         <input type="radio" id="Ms." value="Ms." name="title">
+         <label for="PhD.">PhD</label>
+         <input type="radio" id="PhD." value="PhD." name="title">
+         <br>
+         With the use of the radio button we can select only one of the option
+          but here we can select all available option because we haven't include 
+          all of this radio button to a same group 
+        -->
+         <label for="title">title:</label>
+         <label for="Mr.">Mr.</label>
+         <input type="radio" id="Mr." value="Mr." name="title">
+         <label for="Ms.">Ms.</label>
+         <input type="radio" id="Ms." value="Ms." name="title">
+         <label for="PhD.">PhD</label>
+         <input type="radio" id="PhD." value="PhD." name="title">
+         <br>
+
+         <label for="payment">payment</label>
+         <select id="payment" name="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+         </select>  <br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscriber" name="subscribe"><br>
+
+        <label for="comment">comment</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea> <br>
+
+        <label for="file">file:</label>
+        <input type="file" id="file" name="file" accept=".pdf,.docx,.doc,.xls,.pptx,.png,.jpg"><br>
+
+        <input type="reset" value="Reset"> <br>
+         <input type="submit" value="Submit"> <br>
+         
+        </form>
+            
+        
+    </body>
+</html>
+
+<!--Here's why both id and name are used:
+
+- id is used for client-side identification and manipulation of the element.
+- name is used for server-side identification of the form control's value.
+
+In summary, id is used for JavaScript and CSS to reference the element, while name
+ is used to send the form control's value to the server when the form is submitted.-->

@@ -1,0 +1,31 @@
+p{
+    margin-left:50px;
+}
+h1{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+footer{
+    border:10px solid rgb(191, 238, 226);
+    border-radius:10px ;
+    margin:7px;
+
+}
+.box{
+    border: 5px solid;
+    font-size:5em;
+    height:250px;
+    
+}
+#box1{
+    background-color: green;
+    margin-top:50px;
+    margin-left:50px;
+    margin-right:50px;
+    
+}
+#box2{
+    background-color: pink;
+    margin:50px;
+}
+/* margin:auto grdiyo baney bich ma aauxa*/
