@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Question</title>
+    <style>
+      .para {
+        background-color: blue;
+        color: white;
+        /* id class element --> 0 1 0 --> (10)  --winner so this style applies */
+      }
+      div p1 {
+        background-color: yellow;
+        color: Whitesmoke;
+        /* id class element --> 0 0 2 --> (2) */
+      }
+      p1 {
+        /* id class element --> 0 0 1 --> (1) */
+        background-color: red;
+        color: black;
+      }
+
+      /* for second question css */
+
+      div.greetDiv .greet {
+        color: orange;
+        font-size: 30px;
+      }
+      .greetDiv p2.greet{
+        color: purple;
+        font-size: 40px;
+      }
+      .greetDiv .greet{
+        color: green;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+    selectors in CSS order of priority are id > class > element
+    </h2>
+    <hr />
+
+    <h3 style="color: brown">This is a paragraph</h3>
+    <div>
+      <p1 class="para">Hello this is me BCA student.</p1>
+    </div>
+<br>
+<br>
+    <hr>
+<!-- next question -->
+ <div class="greetDiv">
+    <p2 class="greet">
+        Hello, World!
+    </p2>
+ </div>
+
+  </body>
+</html>
