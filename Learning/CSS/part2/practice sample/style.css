@@ -58,3 +58,49 @@ input[type="password"]{
 input[type]{
     background-color: ghostwhite;
 }
+
+/* Pseudo class selector */
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: overline;
+}
+
+button:active{
+    background-color: hotpink;
+}
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+input[type=radio]:checked +label {
+    color: red;
+    font-weight: bold;
+}
+
+/* when used 2 then it will select 2nd element and css is applied */
+
+/* div:nth-of-type(2){
+    background-color:rgb(182, 19, 197);
+} */
+
+
+/* when used 2n then it will select even elements(second element of same element type and when css is applied in 2nd element then again applied in next 2nd element) and css is applied */
+div:nth-of-type(2n){
+    background-color:lightblue;
+}
+/* Pesudo element selector : (is keyword added to selector) to apply css in the specific part of selected element*/
+h1::first-letter{
+    color: pink;
+}
+p::first-line{
+    color:purple;
+    font-weight: 900;
+}
+p::selection{
+    background-color: yellowgreen;
+}

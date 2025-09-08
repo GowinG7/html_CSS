@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inheritance Demo</title>
-    <link rel="stylesheet" href="inheritance_style.css" />
+    <style>
+      .second{
+        background-color: aqua;
+      }
+      .secondpara{
+        background-color: red;;
+      }
+      .hr{
+        border: 5px solid rgb(75, 15, 155);
+      }
+
+      /* for first part */
+      div{
+      background-color: hotpink;
+      }
+      input{
+        background-color: yellow;
+      }
+      button{
+        background-color: lightgreen;
+      }
+    </style>
   </head>
   <body>
-    <body>
       <h1>Main Heading</h1>
       <div>
         <h2>Heading 1</h2>
@@ -22,6 +42,7 @@
         <hr />
       </div>
 
+      <hr >
       <div>
         <h2>Heading 2</h2>
         <p>
@@ -32,6 +53,21 @@
         </p>
         <hr />
       </div>
+
+      <hr class="hr">
+      <div class="second">
+        <p class="secondpara">
+          Hello there!
+          <ul>
+            Hi how are you? 
+            <li>a</li>
+            <li>aa</li>
+            <li>aaa</li>
+            <li>aaaa</li>
+            <li>aaaaa</li>
+          </ul>
+        </p>
+      </div>
+
     </body>
-  </body>
-</html>
+  </html>
