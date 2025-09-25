@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Translate CSS Property</title>
+    <style>
+        section{
+            margin-top: 100px;
+        }
+        div{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: skyblue;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        div:nth-of-type(2n){
+            background-color: coral;
+        }
+        div:nth-of-type(3n){
+            background-color:green;
+        }
+        #one{
+            transform: translate(10px,10px);
+        }
+        #two{
+            transform: translateX(40px);
+        }
+        #three{
+            transform: translateY(469px);
+        }
+        #four{
+         transform: skew(40deg);   
+        }
+    </style>
+</head>
+<body>
+    <section>
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </section>
+</body>
+</html>

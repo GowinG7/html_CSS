@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tranform Scale</title>
+     <style>
+        section{
+            margin-top: 100px;
+        }
+        div{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: skyblue;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        div:nth-of-type(2n){
+            background-color: coral;
+        }
+        div:nth-of-type(3n){
+            background-color:green;
+        }
+        /* transform div id 1 */
+        #one{
+            transform: scaleY(3);
+        }
+        #five{
+            transform: scale(1);
+        }
+        #two{
+            transform: scale(2);
+        }
+       #three{
+        transform: scale(0.5,2);
+       }
+       #four{
+        transform: scaleX(0.5);
+       }
+        
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </section>
+  </body>
+</html>

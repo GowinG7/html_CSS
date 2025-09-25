@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        #one{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            transition: 1s;
+        }
+        #one:hover{
+            background-color: hotpink;
+            border-radius: 50%;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            
+            background-color: rgba(1, 160, 160, 0.541);
+            transition-duration: 1s;
+            transition-delay: 0.75s;
+        }
+        .two:hover{
+            background-color:
+            blueviolet;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div class="two"></div>
+    
+</body>
+</html>

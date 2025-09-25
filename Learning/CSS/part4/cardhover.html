@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover effect</title>
+    <style>
+        .card{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px black;
+            transition: 1s;
+        }
+        .desc{
+            padding: 1px 0 7px 10px;
+        }
+        img{
+            width: 100%;
+            height: 120px;
+            object-fit: fill;
+            border-radius: 3px 3px 0 0;
+        }
+        .card:hover{
+            box-shadow: 0 6px 18px rgb(7, 107, 57);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="images/man.jpg" alt="man">
+        <div class="desc">
+            <h3>GG</h3>
+            <p>IT Specialist</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/woman.jpg" alt="woman">
+        <div class="desc">
+            <h3>Suruchi</h3>
+            <p>Administrator</p>
+        </div>
+    </div>
+</body>
+</html>
