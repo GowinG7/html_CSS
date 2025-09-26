@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Position example</title>
+  <style>
+    .parent {
+      height: 300px;         /* small parent box */
+      overflow: auto;        /* scroll inside parent */
+      border: 2px solid black;
+      margin: 20px;
+      background: lightgray;
+    }
+    .sticky {
+      position: sticky;
+      top: 20px;                /* will stick at top */
+      background: orange;
+      padding: 10px;
+    }
+    .content {
+      height: 600px;         /* big content to scroll */
+    }
+  </style>
+</head>
+<body>
+  <h2>Sticky inside parent</h2>
+
+  <div class="parent">
+    <h3 class="sticky">I am Sticky Header</h3>
+    <div class="content">
+      <p>Scroll inside this box...</p>
+      <p>Keep scrolling...</p>
+      <p>Notice I stop sticking once gray box ends!</p>
+    </div>
+  </div>
+
+  <p>Outside parent... I am just normal page content.</p>
+</body>
+</html>
