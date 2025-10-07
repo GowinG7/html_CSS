@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 300px;
+        background-color: coral;
+
+        animation:
+            colAnimate 8s ease-in 0s infinite normal;
+      }
+      @keyframes colAnimate{
+        0%{
+            background-color: rgb(7, 83, 36);
+        }
+        50%{
+            background-color: rgb(231, 154, 238);
+        }
+        75%{
+            background-color: rgb(132, 201, 223);
+        }
+        100%{
+            background-color: rgb(65, 175, 108);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>% in Animation</h2>
+    <div class="box">This is a box</div>
+  </body>
+</html>

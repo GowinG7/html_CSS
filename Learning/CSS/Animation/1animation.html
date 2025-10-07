@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 300px;
+        background-color: coral;
+
+        /* animation-name: fontAnimation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+       
+        animation-name: colorChange;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        animation-name: widthAnimation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-direction: normal; */
+
+        /* each new animation name overwrites the previous one so to 
+        run multiple animations together, we must combine them in animation shorthand */
+
+        animation: fontAnimation 2s ease-in 0s infinite normal,
+          colorChange 2s ease-in 0s infinite alternate,
+          widthAnimation 2s ease-in 0s infinite normal;
+      }
+      @keyframes fontAnimation {
+        from {
+          font-size: 20px;
+          color: rgb(18, 86, 18);
+        }
+        to {
+          font-size: 40px;
+          color: chocolate;
+          border-radius: 15px;
+        }
+      }
+      @keyframes colorChange {
+        from {
+          background-color: rgb(132, 201, 223);
+        }
+        to {
+          background-color: rgb(231, 154, 238);
+        }
+      }
+      @keyframes widthAnimation {
+        from {
+          width: 40px;
+        }
+        to {
+          width: 456px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animations</h1>
+    <div class="box">This is a box</div>
+  </body>
+</html>
