@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#loader {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 25px solid #f3f3f3;
+  border-top: 25px solid rgb(184, 119, 53);
+  animation: loading 2s linear infinite; 
+  font-size: 1.2rem;
+  color: rgb(37,35,33);
+}
+span{
+    font-size: 2.2rem;
+    margin-left: 30px;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

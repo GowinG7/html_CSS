@@ -1,0 +1,70 @@
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+.container div {
+  background-color: pink;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.header {
+  grid-column: 1 / 13; /*or 1 / span 12 */
+  grid-row: 1/2;
+}
+.sidebar {
+  grid-column: 1/ 4; /* 3cols*/
+  grid-row: 2 / span 10; /* 10rows header has 1 row and 
+        starts from 2rowslines so for 10 rows it goes uptop 12
+        2 bata start baxa matlab 1 line bayo aba 10 ota line thapney bnya ho span bnya = 11line vayeC 10 ota col*/
+}
+.navigation {
+  grid-column: 4 / span 6;
+  grid-row: 2/3;
+}
+.ads {
+  grid-row: 2 / span 10;
+  grid-column: 10 / 13;
+}
+.main {
+  grid-column: 4 / span 6;
+  grid-row: 3 / span 9;
+}
+.footer {
+  grid-row: 12 / 13;
+  grid-column: 1 / span 12;
+}
+
+@media (max-width: 720px) {
+  .container div {
+    font-size: 1.5rem;
+  }
+  .header {
+    grid-column: 1 / span 12;
+    grid-row: 1/ 1span;
+  }
+  .navigation {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+  }
+  .sidebar {
+    grid-row: 3 / span 9;
+    grid-column: 1/ 4;
+  }
+  .main {
+    grid-row: 3 / span 9;
+    grid-column: 4/ 13;
+  }
+  .ads {
+    grid-row: 12 / 13;
+    grid-column: 1 / 4;
+  }
+  .footer {
+    grid-row: 12/ 13;
+    grid-column: 4 / 13;
+  }
+}
