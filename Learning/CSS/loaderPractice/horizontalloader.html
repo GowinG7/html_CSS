@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loader</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #Loader {
+        background-color: lightseagreen;
+        height: 40px;
+        width: 250px;
+border-radius: 20px;
+        /* border: 25px solid black; */
+        /* border-top: 25px solid orange; */
+      }
+      #indiv {
+        background-color: orange;
+        border-radius: 20px;
+        height: 40px;
+        width: 40px;
+        animation:slide-in 0.5s linear 1s infinite alternate ;
+      }
+      @keyframes slide-in{
+        from{
+            transform: translateX(0)
+        }
+        to{
+            transform: translateX(210px); /*cause 40 px width is occcupy by load*/
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="Loader">
+        <div id="indiv"></div>
+      </div>
+      <span>Loading..</span>
+    </div>
+  </body>
+</html>
